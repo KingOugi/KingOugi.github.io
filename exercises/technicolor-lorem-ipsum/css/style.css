@@ -1,6 +1,6 @@
 #para-one {
     color: #3e2723;
-    background-color: #ffe0b2;
+    background-color: #ffccbc;
 }
 
 #para-two {
@@ -36,4 +36,9 @@
 #span-five {
     color: #ffffff;
     background-color: #2e7d32;
+}
+
+#span-six {
+    color: #ffffff;
+    background-color: #f57c00;
 }
