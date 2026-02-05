@@ -10,7 +10,7 @@ padding: 20px;
 display: inline-block;
 width: 100px;
 height: 100px;
-background-color: #666666;
+background-color: #777777;
 border: 3px solid #0b0b0b;
 box-sizing: border-box;
 }
@@ -20,28 +20,16 @@ background-color: transparent;
 border-color: transparent;
 }
 
-.cyan {
-background-color: #00c8ff;
+.orange {
+background-color: #f97316;
 }
 
 .purple {
 background-color: #8b5cf6;
 }
 
-.yellow {
-background-color: #fbbf24;
-}
-
-.green {
-background-color: #22c55e;
-}
-
 .red {
 background-color: #ef4444;
-}
-
-.blue {
-background-color: #3b82f6;
 }
 
 body {
