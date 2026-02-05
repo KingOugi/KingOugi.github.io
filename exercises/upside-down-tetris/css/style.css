@@ -21,7 +21,7 @@ border-color: transparent;
 }
 
 .orange {
-background-color: #1eff00;
+background-color: #f97316;
 }
 
 .purple {
@@ -30,6 +30,14 @@ background-color: #8b5cf6;
 
 .red {
 background-color: #ef4444;
+}
+
+.cyan {
+background-color: #06b6d4;
+}
+
+.green {
+background-color: #22c55e;
 }
 
 body {
