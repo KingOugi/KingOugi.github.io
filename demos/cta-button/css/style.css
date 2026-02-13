@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7e6;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 26px;
+    background-color: #ffd966;   /* soft yellow */
+    color: #5a4a00;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #f4c542;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffe899;
+    transform: scale(1.05);
+}
