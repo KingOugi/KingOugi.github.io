@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #141414;
+}
+
+.container {
+    width: 85%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbar {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 18px 0px;
+    text-align: center;
+}
+
+.brand {
+    font-family: "Bungee", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.tagline {
+    margin-top: 6px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.section {
+    padding: 70px 0px;
+}
+
+.row {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.col {
+    flex: 1;
+    min-width: 260px;
+}
+
+.image-col {
+    text-align: center;
+}
+
+.text-col {
+    text-align: left;
+}
+
+.badge {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.18);
+    margin-bottom: 10px;
+}
+
+h1,
+h2 {
+    font-family: "Bungee", Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    max-width: 520px;
+}
+
+img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+}
+
+.nacho {
+    background-color: #ff7a00;
+}
+
+.sweet {
+    background-color: #6b2fb8;
+}
+
+.cool {
+    background-color: #1aa7ff;
+}
+
+@media (max-width: 860px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .text-col {
+        text-align: center;
+    }
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
