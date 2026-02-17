@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1f1f1f;
+}
+
+#card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    border: 2px solid #cccccc;
+    padding: 15px;
+}
+
+.shake {
+    background-color: #cfe8ff;
+}
+
+.frylock {
+    background-color: #ffe08a;
+}
+
+.meatwad {
+    background-color: #ffb3a7;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #111111;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.card p {
+    flex: 1;
+}
+
+.casual {
+    font-size: 14px;
+    margin-top: 5px;
+}
