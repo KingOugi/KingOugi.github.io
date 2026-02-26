@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f7;
+    color: #222222;
+}
+
+/* HERO */
+#hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    padding: 48px 20px;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("../images/four-seasons-home.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0px auto;
+    width: 100%;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    margin: 0px 0px 10px;
+    font-size: 48px;
+}
+
+.hero-content p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+/* CENTERED PAGE */
+.page-layout {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 32px 20px;
+}
+
+.intro h2 {
+    margin-top: 0px;
+}
+
+/* GALLERY GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
