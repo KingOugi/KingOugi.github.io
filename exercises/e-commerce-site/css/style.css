@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f6fc;
+    color: #1c1b2d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    font: inherit;
+}
+
+#promo-bar {
+    background-color: #1a1730;
+    color: #f3f1ff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+}
+
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+
+#top-nav,
+#bottom-nav,
+#hero,
+#quick-links-section,
+.featured-section,
+#footer-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+}
+
+#brand {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #4338ca;
+    white-space: nowrap;
+}
+
+#search-area {
+    flex: 1;
+    max-width: 420px;
+}
+
+#search-area input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d8d3f0;
+    border-radius: 999px;
+    background-color: #f8f7fd;
+    outline: none;
+}
+
+#user-links,
+#bottom-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#user-links a,
+#bottom-nav a,
+.see-more,
+.creator-card a,
+.footer-column a {
+    transition: color 0.3s;
+}
+
+#user-links a:hover,
+#bottom-nav a:hover,
+.see-more:hover,
+.creator-card a:hover,
+.footer-column a:hover {
+    color: #4338ca;
+}
+
+#bottom-nav {
+    padding: 14px 0 18px;
+    border-top: 1px solid #ece8fa;
+}
+
+#bottom-nav a {
+    font-weight: 600;
+}
+
+#hero {
+    padding: 70px 0 50px;
+}
+
+#hero-content {
+    background:
+        linear-gradient(135deg, #4338ca, #1d4ed8);
+    color: #ffffff;
+    border-radius: 28px;
+    padding: 54px;
+    max-width: 900px;
+    box-shadow: 0 16px 34px rgba(67, 56, 202, 0.2);
+}
+
+.small-label,
+.section-label {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.small-label {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #d9d3ff;
+}
+
+#hero-content h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+#hero-content p {
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #ffffff;
+    color: #1c1b2d;
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+#quick-links-section {
+    padding: 10px 0 50px;
+}
+
+#quick-links-section h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+#quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.quick-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    padding: 20px;
+    border-radius: 22px;
+    background:
+        linear-gradient(135deg, #ede9ff, #ffffff);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    text-align: center;
+}
+
+.featured-section {
+    padding: 20px 0 60px;
+}
+
+.alt-background {
+    background-color: #ece8fa;
+    width: 100%;
+    max-width: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.section-label {
+    margin-bottom: 8px;
+    color: #4338ca;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+.see-more {
+    font-weight: bold;
+    color: #312e81;
+}
+
+.product-grid,
+.creator-grid,
+#footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.product-card,
+.creator-card {
+    background-color: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.07);
+}
+
+.product-image {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(135deg, #c4b5fd, #7c3aed);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card h3,
+.product-card p {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.product-card h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5d5974;
+    font-weight: bold;
+}
+
+.creator-card {
+    padding: 24px;
+}
+
+.creator-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.creator-card p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #5a566e;
+}
+
+.creator-card a {
+    font-weight: bold;
+    color: #312e81;
+}
+
+footer {
+    background-color: #11101d;
+    color: #eeeaff;
+    margin-top: 30px;
+    padding: 50px 0 24px;
+}
+
+#footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 24px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.footer-column a {
+    display: block;
+    margin-bottom: 10px;
+    color: #d2ccf8;
+}
+
+#footer-note {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #bdb7e6;
+}
+
+@media screen and (max-width: 950px) {
+    #quick-links-grid,
+    .product-grid,
+    .creator-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hero-content h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #top-nav,
+    #user-links,
+    #bottom-nav,
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hero {
+        padding: 50px 0 30px;
+    }
+
+    #hero-content {
+        padding: 34px 24px;
+    }
+
+    #hero-content h1 {
+        font-size: 2rem;
+    }
+
+    #quick-links-grid,
+    .product-grid,
+    .creator-grid,
+    #footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
