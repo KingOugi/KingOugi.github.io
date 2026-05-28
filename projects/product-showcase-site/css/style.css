@@ -68,10 +68,18 @@ body {
     font-weight: 800;
     font-size: 12px;
     letter-spacing: 1px;
-    padding: 6px 10px;
+    padding: 6px 12px;
     border-radius: 999px;
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color: rgba(0, 0, 0, 0.28);
+    color: #ffffff;
     margin-bottom: 10px;
+}
+
+/* Fixes the low-contrast Sweet + Heat eyebrow text */
+.sweet .badge {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff4d6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 h1,
@@ -103,6 +111,12 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0px 10px 18px rgba(0, 0, 0, 0.22));
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
 }
 
 .cta {
@@ -113,10 +127,12 @@ img {
     border-radius: 999px;
     background-color: #141414;
     color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cta:hover {
     transform: translateY(-2px);
+    background-color: #000000;
 }
 
 .nacho {
