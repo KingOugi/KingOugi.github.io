@@ -2,46 +2,79 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: #141414;
+    background-color: #111111;
 }
 
 .container {
     width: 85%;
-    max-width: 980px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.topbar {
-    background-color: #111111;
+.hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 20%, #ff7a00 0%, transparent 28%),
+        linear-gradient(135deg, #111111 0%, #2a1010 45%, #ff7a00 100%);
     color: #ffffff;
-    padding: 18px 0px;
     text-align: center;
+}
+
+.hero-content {
+    padding: 90px 0px;
+}
+
+.hero-text {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .brand {
     font-family: "Bungee", Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 14px;
 }
 
-.tagline {
-    margin-top: 6px;
-    font-size: 16px;
-    opacity: 0.9;
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
-    padding: 70px 0px;
+    padding: 80px 0px;
+}
+
+.flavor-card {
+    padding: 46px;
+    border-radius: 30px;
+    box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.25);
 }
 
 .row {
     display: flex;
-    gap: 34px;
+    gap: 44px;
     align-items: center;
     justify-content: space-between;
 }
@@ -65,28 +98,27 @@ body {
 
 .badge {
     display: inline-block;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 12px;
-    letter-spacing: 1px;
-    padding: 6px 12px;
+    letter-spacing: 1.5px;
+    padding: 8px 14px;
     border-radius: 999px;
-    background-color: rgba(0, 0, 0, 0.28);
+    background-color: rgba(0, 0, 0, 0.35);
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
-/* Fixes the low-contrast Sweet + Heat eyebrow text */
 .sweet .badge {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff4d6;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
 }
 
 h1,
 h2 {
     font-family: "Bungee", Arial, Helvetica, sans-serif;
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     letter-spacing: 1px;
 }
 
@@ -95,59 +127,90 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 46px;
+    line-height: 1.1;
 }
 
 p {
     font-size: 18px;
     margin-top: 0px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     max-width: 520px;
 }
 
 img {
     width: 100%;
-    max-width: 420px;
+    max-width: 430px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(0px 10px 18px rgba(0, 0, 0, 0.22));
+    filter: drop-shadow(0px 14px 22px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.03);
+    transform: scale(1.04) rotate(-1deg);
 }
 
 .cta {
     display: inline-block;
     text-decoration: none;
-    font-weight: 800;
-    padding: 14px 22px;
+    font-weight: 900;
+    padding: 14px 24px;
     border-radius: 999px;
     background-color: #141414;
     color: #ffffff;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .cta:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     background-color: #000000;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta {
+    background-color: #ffffff;
+    color: #141414;
+}
+
+.hero-cta:hover {
+    background-color: #fff4d6;
 }
 
 .nacho {
-    background-color: #ff7a00;
+    background: linear-gradient(135deg, #ff7a00, #ff9f1c);
 }
 
 .sweet {
-    background-color: #6b2fb8;
+    background: linear-gradient(135deg, #4a1c82, #6b2fb8);
+    color: #ffffff;
 }
 
 .cool {
-    background-color: #1aa7ff;
+    background: linear-gradient(135deg, #1aa7ff, #72d4ff);
+}
+
+.footer {
+    padding: 28px 0px;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
 }
 
 @media (max-width: 860px) {
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
     .row {
         flex-direction: column;
         text-align: center;
@@ -164,5 +227,13 @@ img:hover {
     p {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .flavor-card {
+        padding: 32px 24px;
+    }
+
+    h2 {
+        font-size: 36px;
     }
 }
